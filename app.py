@@ -37,7 +37,7 @@ if st.button("Generate Description"):
 
     # 7. CALLING THE CHEF
     # We load the specific AI model (gemini-1.5-flash is fast and cheap/free)
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
     
     # We send the prompt to Google and wait for the response
     with st.spinner("Writing your listing..."):
@@ -46,4 +46,5 @@ if st.button("Generate Description"):
     # 8. SERVING THE DISH
     # We display the AI's answer on the screen
     st.success("Here is your listing:")
+
     st.write(response.text)
