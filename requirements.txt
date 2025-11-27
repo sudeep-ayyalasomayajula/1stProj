@@ -1,2 +1,7 @@
-streamlit
-google-generativeai 
+streamlit                   # The website UI
+google-generativeai>=0.8.0  # The Chef (Gemini 2.5)
+langchain-google-genai      # The connector between LangChain and Google
+langchain                   # The framework for building AI apps
+faiss-cpu                   # The "Filing Cabinet" (Vector DB)
+pypdf                       # To read PDF files
+langchain-community         # Extra tools for LangChain
